@@ -1,0 +1,5 @@
+C:\Users\Carlos\Documents\GitHub\Gimnasio\GimnasioMVC\Gym.Interfaces\bin\Debug\Gym.Interfaces.dll
+C:\Users\Carlos\Documents\GitHub\Gimnasio\GimnasioMVC\Gym.Interfaces\bin\Debug\Gym.Interfaces.pdb
+C:\Users\Carlos\Documents\GitHub\Gimnasio\GimnasioMVC\Gym.Interfaces\obj\Debug\Gym.Interfaces.csprojResolveAssemblyReference.cache
+C:\Users\Carlos\Documents\GitHub\Gimnasio\GimnasioMVC\Gym.Interfaces\obj\Debug\Gym.Interfaces.dll
+C:\Users\Carlos\Documents\GitHub\Gimnasio\GimnasioMVC\Gym.Interfaces\obj\Debug\Gym.Interfaces.pdb

@@ -1,0 +1,5 @@
+C:\Users\Carlos\Documents\GitHub\Gimnasio\GimnasioMVC\Gym.Services\bin\Debug\Gym.Services.dll
+C:\Users\Carlos\Documents\GitHub\Gimnasio\GimnasioMVC\Gym.Services\bin\Debug\Gym.Services.pdb
+C:\Users\Carlos\Documents\GitHub\Gimnasio\GimnasioMVC\Gym.Services\obj\Debug\Gym.Services.csprojResolveAssemblyReference.cache
+C:\Users\Carlos\Documents\GitHub\Gimnasio\GimnasioMVC\Gym.Services\obj\Debug\Gym.Services.dll
+C:\Users\Carlos\Documents\GitHub\Gimnasio\GimnasioMVC\Gym.Services\obj\Debug\Gym.Services.pdb
