@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using Gym.DataBase.ActaModels;
 using Gym.Models.Models;
 using Gym.Interfaces.Titulos;
+using System.Data.Entity;
 
 
 namespace Gym.Services.Tramas
@@ -42,7 +43,7 @@ namespace Gym.Services.Tramas
         public IList<Seguimiento> ListameTodo(DateTime fecha)
         {
             
-            return entidadSeguimiento.Seguimientos.Where(x => x.Fecha == fecha).ToList();
+            return entidadSeguimiento.Seguimientos.Include(o => o.Cliente).Where(x => x.Cliente.Nombre.Contains("")).ToList();
         }
 
         public void Modificar(Seguimiento seguimiento)

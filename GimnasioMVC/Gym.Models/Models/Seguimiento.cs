@@ -12,6 +12,7 @@ namespace Gym.Models.Models
     public class Seguimiento
     {
         public Int32 Id { get; set; }
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
         public DateTime Fecha { get; set; }
         public Decimal Peso { get; set; }
         public Decimal Altura { get; set; }

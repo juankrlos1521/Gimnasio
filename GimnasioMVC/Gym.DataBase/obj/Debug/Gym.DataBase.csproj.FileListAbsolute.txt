@@ -19,3 +19,5 @@ C:\Users\Carlos\Documents\GitHub\Gimnasio\GimnasioMVC\Gym.DataBase\bin\Debug\Mic
 C:\Users\Carlos\Documents\GitHub\Gimnasio\GimnasioMVC\Gym.DataBase\obj\Debug\Gym.DataBase.csprojResolveAssemblyReference.cache
 C:\Users\Carlos\Documents\GitHub\Gimnasio\GimnasioMVC\Gym.DataBase\obj\Debug\Gym.DataBase.dll
 C:\Users\Carlos\Documents\GitHub\Gimnasio\GimnasioMVC\Gym.DataBase\obj\Debug\Gym.DataBase.pdb
+C:\Users\Carlos\Documents\GitHub\Gimnasio\GimnasioMVC\Gym.DataBase\bin\Debug\es\EntityFramework.resources.dll
+C:\Users\Carlos\Documents\GitHub\Gimnasio\GimnasioMVC\Gym.DataBase\bin\Debug\es\EntityFramework.SqlServer.resources.dll
