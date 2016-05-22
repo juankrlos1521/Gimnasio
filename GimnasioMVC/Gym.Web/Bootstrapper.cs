@@ -30,7 +30,7 @@ namespace Gym.Web
 
             //Registrar Componentes
             container.RegisterType<ISeguimientoTitulo, SeguimientoTrama>();
-
+            container.RegisterType<ITrabajadorTitulo, TrabajadorTrama>();
 
 
 
