@@ -8,3 +8,8 @@ C:\Users\Solier\Documents\Visual Studio 2015\Projects\Gimnasio-master\GimnasioMV
 C:\Users\Solier\Documents\Visual Studio 2015\Projects\Gimnasio-master\GimnasioMVC\Gym.Models\obj\Debug\Gym.Models.csprojResolveAssemblyReference.cache
 C:\Users\Solier\Documents\Visual Studio 2015\Projects\Gimnasio-master\GimnasioMVC\Gym.Models\obj\Debug\Gym.Models.dll
 C:\Users\Solier\Documents\Visual Studio 2015\Projects\Gimnasio-master\GimnasioMVC\Gym.Models\obj\Debug\Gym.Models.pdb
+C:\Users\Carlos\Desktop\Gimnasio-master\GimnasioMVC\Gym.Models\bin\Debug\Gym.Models.dll
+C:\Users\Carlos\Desktop\Gimnasio-master\GimnasioMVC\Gym.Models\bin\Debug\Gym.Models.pdb
+C:\Users\Carlos\Desktop\Gimnasio-master\GimnasioMVC\Gym.Models\obj\Debug\Gym.Models.csprojResolveAssemblyReference.cache
+C:\Users\Carlos\Desktop\Gimnasio-master\GimnasioMVC\Gym.Models\obj\Debug\Gym.Models.dll
+C:\Users\Carlos\Desktop\Gimnasio-master\GimnasioMVC\Gym.Models\obj\Debug\Gym.Models.pdb

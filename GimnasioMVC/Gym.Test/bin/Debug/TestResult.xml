@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\Users\Carlos\Desktop\Gimnasio-master\GimnasioMVC\Gym.Test\bin\Debug\Gym.Test.dll" total="9" errors="1" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2016-05-27" time="18:28:00">
+  <environment nunit-version="2.6.4.14350" clr-version="2.0.50727.8689" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="C:\Program Files (x86)\NUnit 2.6.4\bin" machine-name="DESKTOP-GI8MRI6" user="Carlos" user-domain="DESKTOP-GI8MRI6" />
+  <culture-info current-culture="es-PE" current-uiculture="es-ES" />
+  <test-suite type="Assembly" name="C:\Users\Carlos\Desktop\Gimnasio-master\GimnasioMVC\Gym.Test\bin\Debug\Gym.Test.dll" executed="True" result="Failure" success="False" time="1.034" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="Gym" executed="True" result="Failure" success="False" time="1.026" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="Test" executed="True" result="Failure" success="False" time="1.026" asserts="0">
+            <results>
+              <test-suite type="Namespace" name="Controllers" executed="True" result="Failure" success="False" time="1.025" asserts="0">
+                <results>
+                  <test-suite type="TestFixture" name="SeguimientoControllerTest" executed="True" result="Failure" success="False" time="1.024" asserts="0">
+                    <results>
+                      <test-case name="Gym.Test.Controllers.SeguimientoControllerTest._01_IndexAccion_retornarIndex" executed="True" result="Success" success="True" time="0.762" asserts="2" />
+                      <test-case name="Gym.Test.Controllers.SeguimientoControllerTest._02_TestSeguimientoCreateRetormarVistaesOk" executed="True" result="Success" success="True" time="0.001" asserts="3" />
+                      <test-case name="Gym.Test.Controllers.SeguimientoControllerTest._03_TestSeguimientoGuardadoExitoRedireccionandoIndex" executed="True" result="Success" success="True" time="0.004" asserts="2" />
+                      <test-case name="Gym.Test.Controllers.SeguimientoControllerTest._04_TestClienteDetailsRedirectToIndexWhenIdIsZero" executed="True" result="Error" success="False" time="0.017" asserts="0">
+                        <failure>
+                          <message><![CDATA[System.NullReferenceException : Referencia a objeto no establecida como instancia de un objeto.]]></message>
+                          <stack-trace><![CDATA[en Gym.Web.Controllers.SeguimientoController.Details(Int32 id) en C:\Users\Carlos\Desktop\Gimnasio-master\GimnasioMVC\Gym.Web\Controllers\SeguimientoController.cs:línea 34
+en Gym.Test.Controllers.SeguimientoControllerTest._04_TestClienteDetailsRedirectToIndexWhenIdIsZero() en C:\Users\Carlos\Desktop\Gimnasio-master\GimnasioMVC\Gym.Test\Controllers\SeguimientoControllerTest.cs:línea 83
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="Gym.Test.Controllers.SeguimientoControllerTest._05_TestClienteDetailsreturnViewIsOk" executed="True" result="Success" success="True" time="0.109" asserts="4" />
+                      <test-case name="Gym.Test.Controllers.SeguimientoControllerTest._06_TestClienteGuardadoCorrectamenteRedirectToIndex" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                      <test-case name="Gym.Test.Controllers.SeguimientoControllerTest._07_TestClienteEditReturnViewIsOk" executed="True" result="Success" success="True" time="0.065" asserts="3" />
+                      <test-case name="Gym.Test.Controllers.SeguimientoControllerTest._08_TestClienteEditEditSaveSuccess" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                      <test-case name="Gym.Test.Controllers.SeguimientoControllerTest.TestIndexReturnViewIsOkjjjjjjjjjjjjjjjj" executed="True" result="Success" success="True" time="0.009" asserts="4" />
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

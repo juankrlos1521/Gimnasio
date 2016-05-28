@@ -1,13 +1,15 @@
 ﻿@model IEnumerable<Gym.Models.Models.Trabajador>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Trabajadores";
 }
 
 <h2>Trabajadores</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    <button type="button" name="btnNuevoTrabajador" class="btn btn-primary" onclick="location.href='@Url.Action("Create", "Trabajador")'" aria-label="Left Align">
+        @*<img src="~/Images/Icons/add-client-icon.png" width="25" />&nbsp;&nbsp;*@<strong>Crear Nuevo</strong>
+    </button>
 </p>
 <table class="table">
     <tr>
@@ -24,31 +26,13 @@
             @Html.DisplayNameFor(model => model.Dni)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.FechaNacimiento)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Direccion)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Telefono)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Email)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Sexo)
-        </th>
-        <th>
             @Html.DisplayNameFor(model => model.Estado)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.FechaIngreso)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Salario)
-        </th>
-        <th>
             @Html.DisplayNameFor(model => model.Especialidad)
+        </th>
+        <th>
+            Acciones
         </th>
         <th></th>
     </tr>
@@ -68,36 +52,15 @@
             @Html.DisplayFor(modelItem => item.Dni)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.FechaNacimiento)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Direccion)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Telefono)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Email)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Sexo)
-        </td>
-        <td>
             @Html.DisplayFor(modelItem => item.Estado)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.FechaIngreso)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Salario)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Especialidad)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+            @Html.ActionLink("Editar", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Detalles", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Baja", "Delete", new { id=item.Id })
         </td>
     </tr>
 }

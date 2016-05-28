@@ -21,15 +21,16 @@ namespace Gym.Web.Controllers
 
         // GET: Seguimiento
         [HttpGet]
-        public ActionResult Index()
+        public ViewResult Index()
         {
             var _result = servicio.ListameTodo(Convert.ToDateTime("01/01/1990"));
-            return View(_result);
+            return View("Index", _result);
         }
 
         // GET: Seguimiento/Details/5
         public ActionResult Details(int id)
         {
+           
             var model = servicio.TraerSeguimientoPorId(id);           
       
             return View("Details", model);
