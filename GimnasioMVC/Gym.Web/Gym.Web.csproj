@@ -313,6 +313,8 @@
     <Content Include="Views\Seguimiento\Edit.cshtml" />
     <Content Include="Views\Trabajador\Index.cshtml" />
     <Content Include="Views\Trabajador\Create.cshtml" />
+    <Content Include="Views\Trabajador\Details.cshtml" />
+    <Content Include="Views\Trabajador\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

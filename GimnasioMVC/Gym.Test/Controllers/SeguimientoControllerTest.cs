@@ -54,7 +54,7 @@ namespace Gym.Test.Controllers
             var controller = new SeguimientoController(null);
 
             var view = controller.Create() as ViewResult;
-
+            
             AssertViewWithoutModel(view, "Create");
 
         }
@@ -155,27 +155,7 @@ namespace Gym.Test.Controllers
             Assert.AreEqual("Index", redirect.RouteValues["action"]);
         }
 
-
-
-        [Test]
-        public void TestIndexReturnViewIsOkjjjjjjjjjjjjjjjj()
-        {
-            DateTime datex = Convert.ToDateTime("01/01/1990");
-            //Arrange
-            var mock = new Mock<ISeguimientoTitulo>();
-            mock.Setup(x => x.ListameTodo(datex)).Returns(new List<Seguimiento>());
-            var controller = new SeguimientoController(mock.Object);
-
-            // Act
-            var view = controller.Index();
-
-            //Assert
-            mock.Verify(x => x.ListameTodo(datex), Times.Once);
-            AssertViewsWithModel(view, "Index");
-            Assert.IsInstanceOf(typeof(List<Seguimiento>), view.Model);
-        }
-
-
+        
 
         private void AssertViewsWithModel(ViewResult view, string viewName)
         {
