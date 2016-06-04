@@ -26,7 +26,7 @@
             @Html.DisplayNameFor(model => model.Dni)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Estado)
+            Inhabilitado
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Especialidad)
@@ -60,9 +60,12 @@
         <td>
             @Html.ActionLink("Editar", "Edit", new { id=item.Id }) |
             @Html.ActionLink("Detalles", "Details", new { id=item.Id }) |
-            @Html.ActionLink("Baja", "Delete", new { id=item.Id })
+            @Html.Raw(@Html.ActionLink("Asignar", "Inhabilitar", new { id = item.Id, asignado = item.Id}).ToHtmlString().Replace("Asignar", "Cambiar Estado"))&nbsp;
+            @*<a href="@Url.Action("InhabilitarTrabajador", "TrabajadorTrama", new { Id = item.Id})" onclick="@(Html.Raw(String.Format("return confirm('Usted realmente desea eliminar al Seguimiento')")))">Inhabilitar</a>*@
         </td>
     </tr>
 }
 
 </table>
+
+

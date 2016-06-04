@@ -82,6 +82,9 @@
         <div class="form-group">
             @Html.LabelFor(model => model.Sexo, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
+                <div class="radio">
+
+                </div>
                 <div class="checkbox">
                     @Html.EditorFor(model => model.Sexo)
                     @Html.ValidationMessageFor(model => model.Sexo, "", new { @class = "text-danger" })
@@ -90,13 +93,15 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.Estado, htmlAttributes: new { @class = "control-label col-md-2" })
+            @*@Html.LabelFor(model => model.Estado, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                <div class="checkbox">
-                    @Html.EditorFor(model => model.Estado)
-                    @Html.ValidationMessageFor(model => model.Estado, "", new { @class = "text-danger" })
-                </div>
-            </div>
+
+                @Html.EditorFor(model => model.Estado)
+                @Html.ValidationMessageFor(model => model.Estado, "", new { @class = "text-danger" })*@
+                @*<div class="checkbox">
+                    
+                </div>*@
+            @*</div>*@
         </div>
 
         <div class="form-group">
