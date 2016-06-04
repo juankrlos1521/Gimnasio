@@ -9,11 +9,11 @@ using System.Data.Entity.ModelConfiguration;
 
 namespace Gym.DataBase.Mapping
 {
-    public class ClienteConfig: EntityTypeConfiguration<Cliente>
+    public class RutinaConfig: EntityTypeConfiguration<Rutina>
     {
-        public ClienteConfig()
+        public RutinaConfig()
         {
-            ToTable("Cliente", "dbo");
+            ToTable("Rutina", "dbo");
             HasKey(o => o.Id);
         }
     }

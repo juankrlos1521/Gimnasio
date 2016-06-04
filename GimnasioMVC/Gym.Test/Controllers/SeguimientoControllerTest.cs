@@ -49,12 +49,12 @@ namespace Gym.Test.Controllers
         }
 
         [Test]
-        public void _02_TestSeguimientoCreateRetormarVistaesOk()
+        public void _02_TestSeguimientoCrearRetormarVistaesOk()
         {
             var controller = new SeguimientoController(null);
 
             var view = controller.Create() as ViewResult;
-            
+
             AssertViewWithoutModel(view, "Create");
 
         }
@@ -88,7 +88,7 @@ namespace Gym.Test.Controllers
         //}
 
         [Test]
-        public void _05_TestSeguimientoDetailsreturnViewIsOk()
+        public void _05_TestSeguimientoDetalleRetornarVistaEsOk()
         {
             // Arrange
             var mock = new Mock<ISeguimientoTitulo>();
@@ -105,7 +105,7 @@ namespace Gym.Test.Controllers
         }
 
         [Test]
-        public void _06_TestSeguimientoGuardadoCorrectamenteRedirectToIndex()
+        public void _06_TestSeguimientoGuardadoCorrectamenteRedireccionaraIndex()
         {
             DateTime datex = Convert.ToDateTime("01/01/1990");
             var mock = new Mock<ISeguimientoTitulo>();
@@ -114,7 +114,7 @@ namespace Gym.Test.Controllers
             var redirect = controller.Create(new Seguimiento
             {
                 Fecha = datex,
-                Peso = 1231.2M,
+                Peso =3000.00M,
                 Altura = 12.21M,
                 Brazo = 12.21M,
                 Pierna = 123.23M,
@@ -129,7 +129,7 @@ namespace Gym.Test.Controllers
         }
 
         [Test]
-        public void _07_TestSeguimientoEditReturnViewIsOk()
+        public void _07_TestSeguimientoEditarRetornarVistaEsOk()
         {
             var mock = new Mock<ISeguimientoTitulo>();
             mock.Setup(x => x.TraerSeguimientoPorId(1)).Returns(new Seguimiento());
@@ -143,7 +143,7 @@ namespace Gym.Test.Controllers
 
         }
         [Test]
-        public void _08_TestSeguimientoEditEditSaveSuccess()
+        public void _08_TestSeguimientoEditarGuardarExito()
         {
             //arrange
             var mock = new Mock<ISeguimientoTitulo>();
@@ -155,7 +155,27 @@ namespace Gym.Test.Controllers
             Assert.AreEqual("Index", redirect.RouteValues["action"]);
         }
 
-        
+
+
+        [Test]
+        public void TestIndexReturnViewIsOkjjjjjjjjjjjjjjjj()
+        {
+            DateTime datex = Convert.ToDateTime("01/01/1990");
+            //Arrange
+            var mock = new Mock<ISeguimientoTitulo>();
+            mock.Setup(x => x.ListameTodo(datex)).Returns(new List<Seguimiento>());
+            var controller = new SeguimientoController(mock.Object);
+
+            // Act
+            var view = controller.Index();
+
+            //Assert
+            mock.Verify(x => x.ListameTodo(datex), Times.Once);
+            AssertViewsWithModel(view, "Index");
+            Assert.IsInstanceOf(typeof(List<Seguimiento>), view.Model);
+        }
+
+
 
         private void AssertViewsWithModel(ViewResult view, string viewName)
         {

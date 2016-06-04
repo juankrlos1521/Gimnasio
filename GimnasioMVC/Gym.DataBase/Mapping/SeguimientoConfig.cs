@@ -13,6 +13,9 @@ namespace Gym.DataBase.Mapping
     {
         public SeguimientoConfig()
         {
+            //Property(o => o.Peso)
+            //    .HasPrecision(2, 2);
+
             ToTable("Seguimiento", "dbo");
             HasKey(o => o.Id);
         }

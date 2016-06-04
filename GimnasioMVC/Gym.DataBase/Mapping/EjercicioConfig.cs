@@ -4,16 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 using Gym.Models.Models;
 using System.Data.Entity.ModelConfiguration;
 
 namespace Gym.DataBase.Mapping
 {
-    public class ClienteConfig: EntityTypeConfiguration<Cliente>
+    public class EjercicioConfig:EntityTypeConfiguration<Ejercicio>
     {
-        public ClienteConfig()
+        public EjercicioConfig()
         {
-            ToTable("Cliente", "dbo");
+            ToTable("Ejercicio", "dbo");
             HasKey(o => o.Id);
         }
     }

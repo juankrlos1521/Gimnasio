@@ -19,74 +19,12 @@ namespace Gym.Web.Controllers
             servicio = _servicios;
         }
 
-
-
         // GET: Trabajador
         [HttpGet]
-        public ViewResult Index()
+        public ActionResult Index()
         {
             var _result = servicio.ListarTrabajadores("Solier");
-            return View("Index", _result);
-        }
-
-        // GET: Trabajador/Create
-        [HttpGet]
-        public ActionResult Create()
-        {
-            return View("Create");
-        }
-
-        // POST: Trabajador/Create
-        [HttpPost]
-        public ActionResult Create(Trabajador trabajador)
-        {
-            try
-            {
-                // TODO: Add insert logic here
-                servicio.InsertarTrabajador(trabajador);
-
-                return RedirectToAction("Index", "Trabajador");
-
-            }
-            catch
-            {
-                return View(trabajador);
-            }
-        }
-
-        // GET: Trabajador/Details
-        public ActionResult Details(int id)
-        {
-            var model = servicio.TraerTrabajadorPorId(id);
-
-            return View("Details", model);
-        }
-
-        // GET: Trabajador/Edit
-        public ActionResult Edit(int id)
-        {
-            var model = servicio.TraerTrabajadorPorId(id);
-            return View("Edit", model);
-        }
-
-        // POST: Trabajador/Edit
-        [HttpPost]
-        public ActionResult Edit(Trabajador trabajador)
-        {
-            try
-            {
-                if (ModelState.IsValid)
-                {
-                    servicio.ModificarTrabajador(trabajador);
-                }
-                // TODO: Add update logic here
-
-                return RedirectToAction("Index", "Trabajador");
-            }
-            catch
-            {
-                return View(trabajador);
-            }
+            return View(_result);
         }
     }
 }

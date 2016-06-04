@@ -42,7 +42,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\Cliente.cs" />
+    <Compile Include="Models\Ejercicio.cs" />
+    <Compile Include="Models\Rutina.cs" />
+    <Compile Include="Models\Secuencia.cs" />
     <Compile Include="Models\Seguimiento.cs" />
+    <Compile Include="Models\Tipo.cs" />
     <Compile Include="Models\Trabajador.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

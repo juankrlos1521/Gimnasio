@@ -67,7 +67,11 @@
   <ItemGroup>
     <Compile Include="ActaModels\GymContext.cs" />
     <Compile Include="Mapping\ClienteConfig.cs" />
+    <Compile Include="Mapping\EjercicioConfig.cs" />
+    <Compile Include="Mapping\RutinaConfig.cs" />
+    <Compile Include="Mapping\SecuenciaConfig.cs" />
     <Compile Include="Mapping\SeguimientoConfig.cs" />
+    <Compile Include="Mapping\TipoConfig.cs" />
     <Compile Include="Mapping\TrabajadorConfig.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
